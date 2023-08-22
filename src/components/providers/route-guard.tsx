@@ -36,6 +36,7 @@ export default function RouteGuard({
       setAuthorized(true);
     }
     return () => console.log('cleanup')
+    // eslint-disable-next-line
   }, []);
 
   return (

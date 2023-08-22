@@ -87,15 +87,21 @@ export default async function EventDetail({ params }: { params: { id: string } }
           </Paper>
 				<div className="flex flex-col col-span-7">
           <ReactAccordion
-            summary={<p>Event Details</p>}
+          // eslint-disable-next-line
+          summary={<p>Event Details</p>}
+          // eslint-disable-next-line
             detail={<ReactMarkdown remarkPlugins={[remarkGfm]} children={md} />}
           />
           <ReactAccordion
+          // eslint-disable-next-line
             summary={<p>Rundown</p>}
+            // eslint-disable-next-line
             detail={<ReactMarkdown remarkPlugins={[remarkGfm]} children={md} />}
           />
           <ReactAccordion
+            // eslint-disable-next-line
             summary={<p>FAQ</p>}
+            // eslint-disable-next-line
             detail={<ReactMarkdown remarkPlugins={[remarkGfm]} children={md} />}
           />
         </div>
@@ -137,6 +143,7 @@ function ReactAccordion({
 }) {
   return (
     <Accordion>
+       {/* eslint-disable-next-line */}
       <AccordionSummary expandIcon={<ExpandMore />}>{summary}</AccordionSummary>
       <AccordionDetails>{detail}</AccordionDetails>
     </Accordion>

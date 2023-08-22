@@ -28,7 +28,7 @@ export default function CreateEventForm() {
       <TextField label="Title" {...register("title", { required: true })} />
 			<Select label="Event Type">
 				{EVENT_TYPE.map(event => (
-					<MenuItem value={event.value}>{event.label}</MenuItem>
+					<MenuItem key={event.value} value={event.value}>{event.label}</MenuItem>
 				))}
 			</Select>
       <Box className="w-96">
